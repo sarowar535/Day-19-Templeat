@@ -1,0 +1,320 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+   background: #0000007a;
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   z-index: 555;
+}
+.header-logo{
+    margin-top: 10px;
+}
+.header-logo img{
+    width: 215px;
+}
+.header-manu{}
+.header-manu ul{
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+.header-manu ul li{
+    list-style: none;
+    display: inline-block;
+}
+.header-manu ul li a{
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    padding: 25px 10px;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+.header-manu ul li:hover >a{
+    color: #c6914c;
+    transition: .5s;
+}
+.hoveraffect::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: #c6914c;
+    display: block;
+    position: relative;
+    top: 24px;
+    left: 0;
+}
+.hoveraffect:hover::after{
+    width: 100%;
+    transition: .5s;
+}
+
+/* Dropdown css */
+.header-manu ul li{
+    position: relative;
+}
+.header-manu ul li ul{
+    position: absolute;
+    content: "";
+    top: 100%;
+    left: 0px;
+    width: 205px;
+    background: rgb(255, 255, 255);
+    transition: .4s;
+    z-index: 222;
+    opacity: 0;
+    visibility: hidden;
+    transform-origin: center;
+    transform: scaleY(0);
+   
+}
+.header-manu ul li ul li{
+    display: block;
+    text-align: center;
+}
+.header-manu ul li ul li a{
+    padding-bottom: 15px;
+    color: #000;
+    display: block;
+}
+.header-manu ul li ul li a:hover{
+    background-color: rgb(185, 184, 184);
+}
+
+.header-manu ul li:hover ul{
+    opacity: 1;
+    visibility: visible;
+    transform: scaleY(1);
+   
+}
+
+
+/* baner css */
+
+.baner{
+    background-image: linear-gradient(rgba(0,0,0,0.60),rgba(0,0,0,0.60)), url(./Image/baner.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 250px 0;
+    position: relative;
+
+}
+.baner-head{}
+.baner-head h1{
+    color: #fff;
+    font-size: 64px;
+    font-weight: 700;
+}
+.baner-head p{
+    color: #fff;
+    margin: 30px 0;
+    font-size: 25px;
+    font-weight: 500;
+    display: inline-block;
+    position: relative;
+}
+.baner-head p::after {
+    content: "";
+    width: 45px;
+    height: 2px;
+    background-color: #fbfaf9;
+    display: block;
+    position: absolute;
+    top: 19px;
+    left: 301px;
+}
+.baner-head p::before{
+    content: "";
+    width: 45px;
+    height: 2px;
+    background-color: #fbfaf9;
+    display: block;
+    position: absolute;
+    top: 19px;
+    left: -62px;
+}
+.bton{}
+.bton a{
+    color: #fff;
+    background: #c69453;
+    text-decoration: none;
+    padding: 8px 22px;
+    display: inline-block;
+    border-radius: 25px;
+}
+.bton a:hover{
+    background: rgb(185, 184, 184) ;
+    color:#c6914c ;
+    transition: .5s;
+}
+
+
+
+/* service css */
+
+.service{
+    padding: 80px 0;
+    background: #f8f8f8;;
+}
+.s-item{
+    padding: 30px;
+    background: #fff;
+    border-radius: 5px;
+}
+.s-item img{
+    margin-bottom: 20px;
+}
+.s-item h3 {
+    font-size: 17px;
+}
+.s-item p {
+    font-size: 14px;
+    font-weight: 400;
+    margin: 15px auto;
+    color: #888;
+}
+.s-btn {
+    margin-top: 30px;
+}
+.s-btn a{
+    text-decoration: none;
+    background: #c69453;
+    padding: 6px 14px;
+    display: inline-block;
+    border-radius: 10px;
+    color: #fff;
+}
+.s-btn a:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+.s-item:hover{
+    background-color: #ddd;
+    transition: .5s;
+}
+.s-item:hover img{
+    transform: rotateY(360deg);
+    transition: .8s;
+}
+
+
+
+/* work css */
+
+.work{
+    background: #f8f8f8;;
+    padding: 80px 0;
+}
+.video{}
+.w-contant {
+    text-align: left;
+}
+.w-all{
+    margin-left: 40px;
+}
+.w-contant h2{
+    font-size: 40px;
+}
+.w-contant span{
+    color: #c69453;
+    position: relative;
+    top: 0;
+    left: -9px;
+}
+.w-contant p{
+    margin-top: 30px;
+    font-size: 13px;
+    color: #444;
+}
+.addres{
+    text-align: left;
+    margin-top: 30px;
+}
+.w-btn{
+    text-align: left;
+    margin-top: 30px;
+}
+.w-btn a{
+    text-decoration: none;
+    background: #000;
+    padding: 10px 15px;
+    color: #fff;
+}
+.w-btn a:hover{
+    background: #c69453;
+    transition: .5s;
+}
+
+
+
+/* contact css */
+
+.contact{ 
+    background: #f8f8f8;
+}
+.contact-all{
+    position: relative;
+    top: 85px;
+    left: 0;
+}
+.c-head{}
+.c-head h2 {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.c-head p{
+    margin-bottom: 30px;
+}
+.form{}
+.form .form-control{
+    margin-bottom: 10px;
+    border: none;
+}
+.c-btn{}
+.c-btn a{
+    text-decoration: none;
+    background: #c69453;
+    padding: 13px 20px;
+    color: #fff;
+    display: inline-block;
+}
+.c-imag img {
+    width: 700px;
+    position: relative;
+    top: 0px;
+    left: 14px;
+}
+
+
+
+/* footer css */
+
+
+
+.footer {
+    background: rgb(109, 109, 109);
+    padding: 30px 0px;
+    
+}
+.f-head{
+    text-align: left;
+}
+.f-head p{
+    color: #fff;
+    font-size: 20px;
+}
+.footer-i{
+    color: #fff;
+}
+.footer-i i {
+    padding: 0 15px;
+}
